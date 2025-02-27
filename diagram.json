@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "author": "Amna Bubshait",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-mini", "id": "bb1", "top": -241.4, "left": -2.4, "attrs": {} },
+    {
+      "type": "board-pi-pico-w",
+      "id": "pico",
+      "top": 0,
+      "left": 0,
+      "attrs": { "env": "micropython-20231227-v1.22.0" }
+    },
+    { "type": "wokwi-led", "id": "led1", "top": -42, "left": -101.8, "attrs": { "color": "red" } },
+    { "type": "wokwi-buzzer", "id": "bz1", "top": 12, "left": -171, "attrs": { "volume": "0.1" } },
+    { "type": "wokwi-ir-remote", "id": "remote1", "top": -86.4, "left": 307.2, "attrs": {} },
+    { "type": "wokwi-ir-receiver", "id": "ir1", "top": -250.95, "left": 209.42, "attrs": {} },
+    { "type": "wokwi-neopixel", "id": "rgb2", "top": -41.9, "left": 114.2, "attrs": {} }
+  ],
+  "connections": [
+    [ "ir1:VCC", "bb1:17b.i", "red", [ "v0" ] ],
+    [ "ir1:GND", "bb1:16b.h", "black", [ "v0" ] ],
+    [ "bb1:17b.j", "pico:3V3", "red", [ "v0" ] ],
+    [ "pico:3V3_EN", "rgb2:VDD", "red", [ "h0" ] ],
+    [ "rgb2:VSS", "pico:GND.8", "black", [ "v0" ] ],
+    [ "pico:GND.1", "bb1:16b.i", "black", [ "h-25.25", "v-118.45", "h172.8" ] ],
+    [ "led1:C", "pico:GND.2", "black", [ "v0" ] ],
+    [ "bz1:1", "pico:GND.3", "black", [ "v0" ] ],
+    [ "pico:GP15", "bb1:1b.f", "violet", [ "h-63.65", "v-358.41" ] ],
+    [ "ir1:DAT", "bb1:1b.g", "violet", [ "v0" ] ],
+    [ "bz1:2", "bb1:1b.h", "violet", [ "v0" ] ],
+    [ "rgb2:DIN", "pico:GP22", "green", [ "h18.4", "v156.85" ] ],
+    [ "led1:A", "pico:GP10", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
