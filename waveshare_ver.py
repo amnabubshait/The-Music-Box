@@ -1,4 +1,4 @@
-from machine import Pin,PWM, I2C
+from machine import Pin, PWM, I2C
 from ir_rx.nec import NEC_16
 import random
 from utime import sleep, sleep_ms
