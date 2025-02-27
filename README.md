@@ -85,3 +85,11 @@ while True:
 ## Conclusion
 
 The Music Box successfully combines hardware and software to create an interactive musical experience. The integration of the Pico-Sensor kit with Python demonstrates the seamless interaction between embedded systems and software programming.
+
+## Simulation:
+Downloaded from https://wokwi.com/projects/424069328869043201
+
+Simulate this project on https://wokwi.com
+
+
+**_Note_:** The data values of the IR Remote on Wowki differ from the ones from the WaveShare Raspberry Pi Pico Entry-Level Sensor Kit.
