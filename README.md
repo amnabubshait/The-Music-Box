@@ -14,6 +14,8 @@ The Music Box is a remote-controlled device that plays random musical notes usin
 
 ## Hardware & Materials
 
+<img width="263" alt="image" src="https://github.com/user-attachments/assets/a0e5dc09-5048-4a3e-9b30-141995379002" />
+
 - Raspberry Pi Pico
 - IR Remote Control
 - Buzzer
@@ -21,6 +23,16 @@ The Music Box is a remote-controlled device that plays random musical notes usin
 - Standard LED
 - Resistors and Wiring
 - Power Supply
+
+## System Design
+<img width="271" alt="image" src="https://github.com/user-attachments/assets/cf8b28ca-ecbb-4eb4-8e16-c9fd932702e5" />
+
+## Circuit
+![image](https://github.com/user-attachments/assets/e096fa0f-847d-4966-81d9-91614ab6e020)
+
+## Prototype Sketch
+
+<img width="288" alt="image" src="https://github.com/user-attachments/assets/1c3725f3-0b61-4495-9ab0-bd91dd731b59" />
 
 ## Software Dependencies
 
